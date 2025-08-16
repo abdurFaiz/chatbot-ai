@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useChat } from '../../hooks/useChat';
 import ChatTemplate from '../templates/ChatTemplate';
-import Header from '../organism/Header';
 import ChatHistorySidebar from '../organism/ChatHistorySidebar';
 import ChatArea from '../organism/ChatArea';
 import MessageInput from '../organism/MessageInput';
@@ -33,11 +32,6 @@ const ChatPage: React.FC = () => {
                     onLoadSession={loadChatSession}
                     onDeleteSession={deleteChatSession}
                     onToggleHistory={() => setShowHistory(prev => !prev)}
-                />
-            }
-            header={
-                <Header
-                    onNewChat={startNewChat}
                 />
             }
             chatArea={
