@@ -14,6 +14,7 @@ Sebuah chatbot sederhana yang dibangun dengan **React**, **TypeScript**, dan **T
 ---
 
 ###  Struktur Proyek
+```
 ai-chatbot/
 ├── public/                # Static assets (favicon, dsb.)
 ├── src/
@@ -26,7 +27,7 @@ ai-chatbot/
 ├── package.json           # Scripts dan dependencies
 ├── tsconfig.json          # Konfigurasi TypeScript
 └── vite.config.ts         # Konfigurasi Vite
-
+```
 
 ##  Instalasi & Penggunaan
 
