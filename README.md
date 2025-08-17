@@ -37,6 +37,10 @@ cd chatbot-ai
 ### Install Dependencies
 npm install
 
+### Setup Environment
+Buat file .env di root project:
+VITE_OPENAI_API_KEY=value
+
 ### Jalankan Mode Development
 npm run dev
 
