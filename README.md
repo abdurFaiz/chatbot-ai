@@ -15,18 +15,19 @@ Sebuah chatbot sederhana yang dibangun dengan **React**, **TypeScript**, dan **T
 
 ##  Struktur Proyek
 ai-chatbot/
-├─ public/ # Aset statis (favicon, dsb.)
+├─ public/                    # aset statis (favicon, dsb.)
 ├─ src/
-│ ├─ components/ # UI components: ChatArea, Button, Avatar, dsb.
-│ ├─ hooks/ # Custom hooks (useChats.ts)
-│ ├─ services/ # Integrasi OpenAI API (openaiService.ts)
-│ ├─ types/ # Tipe data TypeScript
-│ ├─ App.tsx # Komponen root aplikasi
-│ └─ main.tsx # Entry point React via Vite
-├─ .env # Variabel environment (API key)
-├─ package.json # Scripts dan dependencies
-├─ tsconfig.json # Konfigurasi TypeScript
-├─ vite.config.ts # Konfigurasi Vite
+│  ├─ components/             # UI components: ChatArea, Button, Avatar, dll.
+│  ├─ hooks/                  # custom hooks (useChats.ts)
+│  ├─ services/               # API integration (openaiService.ts)
+│  ├─ types/                  # tipe TypeScript untuk objek data
+│  ├─ App.tsx                 # root component aplikasi
+│  └─ main.tsx                # entry point React via Vite
+├─ .env                       # environment variables
+├─ package.json               # scripts & dependencies
+├─ tsconfig.json              # konfigurasi TypeScript
+├─ vite.config.ts             # konfigurasi Vite
+
 
 ##  Instalasi & Penggunaan
 
