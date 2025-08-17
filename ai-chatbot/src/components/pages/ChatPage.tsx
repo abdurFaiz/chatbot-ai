@@ -4,6 +4,7 @@ import ChatTemplate from '../templates/ChatTemplate';
 import ChatHistorySidebar from '../organism/ChatHistorySidebar';
 import ChatArea from '../organism/ChatArea';
 import MessageInput from '../organism/MessageInput';
+import Header from '../organism/Header';
 
 const ChatPage: React.FC = () => {
     const [showHistory, setShowHistory] = useState<boolean>(true);
@@ -20,9 +21,13 @@ const ChatPage: React.FC = () => {
         deleteChatSession,
         handleUserInput,
     } = useChat();
+    const isChatEmpty = chatHistory.length === 0;
 
     return (
         <ChatTemplate
+            showSidebar={showHistory}
+            isChatEmpty={isChatEmpty}
+            header={<Header onToggleSidebar={() => setShowHistory(prev => !prev)} />}
             sidebar={
                 <ChatHistorySidebar
                     show={showHistory}
@@ -35,7 +40,7 @@ const ChatPage: React.FC = () => {
                 />
             }
             chatArea={
-                <ChatArea history={chatHistory} isLoading={isLoading} />
+                !isChatEmpty && <ChatArea history={chatHistory} isLoading={isLoading} />
             }
             messageInput={
                 <MessageInput

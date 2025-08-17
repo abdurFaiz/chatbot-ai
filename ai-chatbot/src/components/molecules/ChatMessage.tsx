@@ -11,7 +11,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
 
     const wrapperClass = `flex ${isUser ? 'justify-end' : 'justify-between'} animate-fade-in`;
     const bubbleClass = `${isUser
-        ? 'max-w-2xl px-4 py-2 rounded-l-2xl rounded-br-2xl rounded-tr-xs shadow-2xl backdrop-blur-sm bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-purple-500/25'
+        ? 'max-w-2xl px-4 py-2 rounded-l-2xl rounded-br-2xl rounded-tr-xs shadow-2xl backdrop-blur-sm bg-gradient-to-r from-cyan-400 to-purple-500 text-white '
         : 'bg-transparent text-white'
         }`;
 

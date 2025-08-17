@@ -10,11 +10,11 @@ const LoadingIndicator: React.FC = () => {
                             🤖
                         </div>
                         <div className="flex items-center space-x-2">
-                            <span className="text-sm">AI sedang mengetik</span>
+                            <span className="text-sm">Assistent sedang mengetik</span>
                             <div className="flex items-center space-x-1 ">
-                                <div className="w-2 h-2 bg-purple-400 rounded-full animate-spin"></div>
-                                <div className="w-2 h-2 bg-pink-400 rounded-full animate-spin delay-100"></div>
-                                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-spin delay-200"></div>
+                                <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce"></div>
+                                <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce delay-100"></div>
+                                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce delay-200"></div>
                             </div>
                         </div>
                     </div>

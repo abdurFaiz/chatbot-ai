@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Chat } from '../../types';
-import Icon from '../atoms/Icon'; // Impor komponen Icon
+import Icon from '../atoms/Icon'; 
 
 interface SessionItemProps {
     session: Chat;
@@ -15,7 +15,6 @@ const SessionItem: React.FC<SessionItemProps> = ({ session, isActive, isCollapse
         return null;
     }
     const handleDeleteClick = (e: React.MouseEvent) => {
-        // Hentikan event agar tidak "bubble up" ke div utama dan memicu onLoad
         e.stopPropagation();
         onDelete();
     };
