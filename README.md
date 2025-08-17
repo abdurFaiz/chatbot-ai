@@ -13,7 +13,7 @@ Sebuah chatbot sederhana yang dibangun dengan **React**, **TypeScript**, dan **T
 
 ---
 
-##  Struktur Proyek
+###  Struktur Proyek
 ai-chatbot/
 ├─ public/                    # aset statis (favicon, dsb.)
 ├─ src/
